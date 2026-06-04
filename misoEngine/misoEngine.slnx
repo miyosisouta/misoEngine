@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="misoEngine.vcxproj" Id="0d5a5974-7b44-4682-be35-5bbc563632f7" />
+</Solution>
