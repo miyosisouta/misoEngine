@@ -1,0 +1,19 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/ThirdParty/">
+    <Project Path="../misoEngine/ThirdParty/bulletPhysics/src/BulletCollision/BulletCollision.vcxproj" Id="28ef574a-84db-3cb0-9b45-db3545b2d05c" />
+    <Project Path="../misoEngine/ThirdParty/bulletPhysics/src/BulletDynamics/BulletDynamics.vcxproj" Id="9bf1adf3-eb57-35e8-b156-ade8ffc7e2f0" />
+    <Project Path="../misoEngine/ThirdParty/bulletPhysics/src/LinearMath/LinearMath.vcxproj" Id="4dce52a5-106c-3d94-815d-c8ebc6133b5e" />
+  </Folder>
+  <Project Path="../misoEngine/misoEngine.vcxproj" Id="0d5a5974-7b44-4682-be35-5bbc563632f7">
+    <BuildDependency Project="../misoEngine/ThirdParty/bulletPhysics/src/BulletCollision/BulletCollision.vcxproj" />
+    <BuildDependency Project="../misoEngine/ThirdParty/bulletPhysics/src/BulletDynamics/BulletDynamics.vcxproj" />
+    <BuildDependency Project="../misoEngine/ThirdParty/bulletPhysics/src/LinearMath/LinearMath.vcxproj" />
+  </Project>
+  <Project Path="Game.vcxproj" Id="60c60e7c-5610-4e5b-b118-45fd16e0069a">
+    <BuildDependency Project="../misoEngine/misoEngine.vcxproj" />
+  </Project>
+</Solution>
